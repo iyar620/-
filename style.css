@@ -3,9 +3,14 @@
     font-weight: 400;
     font-style: normal;
   }  
-
+  .secular-one-regular {
+    font-family: "Secular One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 body {
-    font-family: Rubik Doodle Shadow, Arial;
+    font-family: Secular One, Arial;
     text-align: left;
 }
 
@@ -49,18 +54,20 @@ h1{
 
 select, button, input[type="text"] {
     font-size: 1em;
-    padding: 10px;
     margin: 10px 0;
     border: 2px solid #ccc;
     border-radius: 5px;
     outline: none;
     text-align: center;
-    font-family: 'Rubik Doodle Shadow', Arial;
+    font-family: Secular One, Arial;
+    
+
     
 }
 
 select:focus, button:focus, input[type="text"]:focus {
     border-color: #007BFF;
+
 }
 
 button {
@@ -74,6 +81,7 @@ button {
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: 'Rubik Doodle Shadow', Arial;
+
 }
 
 button:hover {
@@ -106,5 +114,7 @@ pre#hangman {
 .English {
     direction: ltr;
 }
+
+
 
 
