@@ -1,14 +1,14 @@
 const list_of_topics = {
     "Animals": ["dog", "cat", "elephant", "giraffe", "tiger", "lion", "zebra", "kangaroo", "panda", "koala", "dolphin", "whale", "shark", "eagle", "owl"],
     "Fruits_and_Vegetables": ["apple", "banana", "tomato", "cucumber", "orange", "grape", "watermelon", "strawberry", "blueberry", "kiwi", "carrot", "broccoli", "lettuce", "pepper", "spinach"],
-    "Countries_and_Cities": ["Israel", "Tel_Aviv", "New_York", "Paris", "Tokyo", "London", "Berlin", "Sydney", "Rome", "Madrid", "Beijing", "Moscow", "Cairo", "Dubai", "Toronto"],
+    "Countries_and_Cities": ["Israel", "Tel-Aviv", "New-York", "Paris", "Tokyo", "London", "Berlin", "Sydney", "Rome", "Madrid", "Beijing", "Moscow", "Cairo", "Dubai", "Toronto"],
     "Professions": ["doctor", "teacher", "engineer", "lawyer", "chef", "nurse", "architect", "pilot", "scientist", "artist", "musician", "actor", "writer", "photographer", "journalist"],
-    "Hobbies": ["painting", "reading", "running", "swimming", "cooking", "gardening", "fishing", "hiking", "cycling", "knitting", "dancing", "singing", "playing_guitar", "playing_piano", "drawing"],
+    "Hobbies": ["painting", "reading", "running", "swimming", "cooking", "gardening", "fishing", "hiking", "cycling", "knitting", "dancing", "singing", "playing-guitar", "playing_piano", "drawing"],
     "Vehicles": ["car", "bicycle", "airplane", "train", "boat", "motorcycle", "bus", "truck", "scooter", "submarine", "helicopter", "spaceship", "tram", "van", "yacht"],
     "Foods": ["pizza", "hamburger", "sushi", "falafel", "chocolate", "pasta", "salad", "sandwich", "soup", "steak", "tacos", "burrito", "pancakes", "waffles", "ice_cream"],
     "Sports": ["soccer", "basketball", "tennis", "cricket", "baseball", "hockey", "golf", "swimming", "running", "cycling", "boxing", "wrestling", "gymnastics", "skiing", "surfing"],
     "Music_Instruments": ["guitar", "piano", "violin", "drums", "flute", "saxophone", "trumpet", "cello", "harp", "clarinet", "trombone", "accordion", "banjo", "ukulele", "mandolin"],
-    "Movies_and_TV_Shows": ["Inception", "Titanic", "Friends", "Breaking_Bad", "The_Godfather", "The_Dark_Knight", "Game_of_Thrones", "The_Simpsons", "Stranger_Things", "Harry_Potter", "Star_Wars", "The_Lord_of_the_Rings", "Avengers", "Sherlock", "The_Office"]
+    "Movies_and_TV_Shows": ["Inception", "Titanic", "Friends", "Breaking-Bad", "The-Godfather", "The-Dark-Knight", "Game-of-Thrones", "The-Simpsons", "Stranger-Things", "Harry-Potter", "Star-Wars", "The-Lord-of-the-Rings", "Avengers", "Sherlock", "The-Office"]
 };
 
 
