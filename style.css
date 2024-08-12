@@ -1,11 +1,3 @@
-@font-face{
-    font-family: 'font-a';
-    src: url(FtPilKahol2.woff2) format(WOFF2);
-}
-    @font-face{
-        font-family: 'font-b';
-        src: url(DanaYadAlefAlefAlef-Normal.otf) format("OpenType") ;
-}
 body {
     font-family: Arial, sans-serif;
     
@@ -13,6 +5,7 @@ body {
 }
 
 #game {
+    
     width: 350px;
     margin-right: auto;
     margin-left: auto; 
@@ -22,19 +15,22 @@ body {
     padding-right:20px;
     padding-bottom:20px;
     padding-top: 15px;
-    background-color: aquamarine;
+    background-color: #21265d;
+    
 }
 html{
     font-size: 25px;
-
-  background-color:rgba(17, 153, 170, 0.5);
-  color: white;}
+    direction: rtl;
+    background-color:rgba(17, 153, 170, 0.5);
+    color: white;
+    
+}
 h1{
     text-align: center;
     text-transform: uppercase;
     font-family: 'Rubik Moonrocks', cursive;
     font-family: 'Rubik Vinyl', Arial, sans-serif;
-    color:  rgb(22, 168, 54) 
+    color:  #fffffff2; 
 }
 h2{
     font-family: font-a,sans-serif; 
@@ -49,7 +45,6 @@ p{
     margin-top: 20px;
     font-size: 1.2em;
     color: red;
-
 }
 
 
@@ -62,6 +57,8 @@ select, button, input[type="text"] {
     border: 2px solid #ccc;
     border-radius: 5px;
     outline: none;
+    text-align: center;
+    
 }
 
 select:focus, button:focus, input[type="text"]:focus {
@@ -91,6 +88,10 @@ button:active {
     transform: translateY(2px);
 }
 
+
+pre#hangman {
+    direction: ltr;
+}
 #Languages{
     background-color: #13c77cc4;
     text-align: right;
@@ -99,7 +100,10 @@ button:active {
     border: #0056b3;
     border-radius: 7px;
     padding-left: 25px;
-    padding-right: 25px;
+    padding-right: 25px; 
+}
+.English {
+    direction: ltr;
 }
 
 
