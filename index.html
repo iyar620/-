@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hangman Game</h1>
+    <div id="Languages">
+        <p> <a href="index2.html">עברית </a></p>
+    </div>
+    
+        <div id="game">
+        <select id="topic">
+            <option value="Animals">Animals</option>
+            <option value="Fruits_and_Vegetables">Fruits and Vegetables</option>
+            <option value="Countries_and_Cities">Countries and Cities</option>
+            <option value="Professions">Professions</option>
+            <option value="Hobbies">Hobbies</option>
+            <option value="Foods">Foods</option>
+            <option value="Vehicles">Vehicles</option>
+            <option value="Sports">Sports</option>
+            <option value="Music_Instruments">Music_Instruments</option>
+            <option value="Movies_and_TV_Shows">Movies_and_TV_Shows</option>
+            
+        </select>
+        <button onclick="startGame()">Start Game</button>
+        <pre id="hangman"></pre>
+        <div id="word"></div>
+        <input type="text" id="letter" maxlength="1">
+        <button onclick="guessLetter()">Guess</button>
+        <div id="message"></div> <!-- אלמנט להודעה -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
