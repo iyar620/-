@@ -19,9 +19,9 @@ const HANGMAN_PHOTOS = {
     4: "x-------x\n|       |\n|       0\n|       |\n|\n|",
     5: "x-------x\n|       |\n|       0\n|      /|\\\n|\n|",
     6: "x-------x\n|       |\n|       0\n|      /|\\\n|      /\n|",
-    7: "x-------x\n|       |\n|       0\n|      /|\\\n|      / \\\n|"
+    7: "x-------x\n|       |\n|       0\n|      /|\\\n|      / \\\n|",
+    8: "x-------x\n|       |\n|       0\n|      /|\\\n|      / \\\n|"
 };
-
 let secretWord = '';
 let oldLettersGuessed = [];
 let num_of_tries = 0;
