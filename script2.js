@@ -24,59 +24,59 @@ const list_of_topics = {
         "אדום", "כחול", "ירוק", "צהוב", "סגול", "כתום", "ורוד", "חום", "שחור", "לבן", "אפור", "טורקיז", "בורדו ", "זהב", "כסף", "ברונזה"
         ]}
 
-const HANGMAN_PHOTOS = {
-    1: "x-------x",
-    2: "x-------x\n|\n|\n|\n|\n|",
-    3: "x-------x\n|       |\n|       0\n|\n|\n|",
-    4: "x-------x\n|       |\n|       0\n|       |\n|\n|",
-    5: "x-------x\n|       |\n|       0\n|      /|\\\n|\n|",
-    6: "x-------x\n|       |\n|       0\n|      /|\\\n|      /\n|",
-    7: "x-------x\n|       |\n|       0\n|      /|\\\n|      / \\\n|",
-    8: "x-------x\n|       |\n|       0\n|      /|\\\n|      / \\\n|"
-};
-
-let secretWord = '';
-let oldLettersGuessed = [];
-let num_of_tries = 0;
-const MAX_TRIES = 7;
-
-function startGame() {
-    const topic = document.getElementById('topic').value;
-    secretWord = list_of_topics[topic][Math.floor(Math.random() * list_of_topics[topic].length)];
-    oldLettersGuessed = [];
-    num_of_tries = 0;
-    document.getElementById('word').innerText = '_ '.repeat(secretWord.length);
-    document.getElementById('hangman').innerText = HANGMAN_PHOTOS[1];
-    document.getElementById('message').innerText = ''; // איפוס ההודעה
-    enableInput();
-}
-
-function guessLetter() {
-    const letter = document.getElementById('letter').value.toLowerCase();
-    if (letter && !oldLettersGuessed.includes(letter)) {
-        oldLettersGuessed.push(letter);
-        if (!secretWord.includes(letter)) {
-            num_of_tries++;
+        const HANGMAN_PHOTOS = {
+            1: "x-------x",
+            2: "x-------x\n|\n|\n|\n|\n|",
+            3: "x-------x\n|       |\n|       0\n|\n|\n|",
+            4: "x-------x\n|       |\n|       0\n|       |\n|\n|",
+            5: "x-------x\n|       |\n|       0\n|      /|\\\n|\n|",
+            6: "x-------x\n|       |\n|       0\n|      /|\\\n|      /\n|",
+            7: "x-------x\n|       |\n|       0\n|      /|\\\n|      / \\\n|",
+            8: "x-------x\n|       |\n|       0\n|      /|\\\n|      / \\\n|"
+        };
+        
+        let secretWord = '';
+        let oldLettersGuessed = [];
+        let num_of_tries = 0;
+        const MAX_TRIES = 7;
+        
+        function startGame() {
+            const topic = document.getElementById('topic').value;
+            secretWord = list_of_topics[topic][Math.floor(Math.random() * list_of_topics[topic].length)];
+            oldLettersGuessed = [];
+            num_of_tries = 0;
+            document.getElementById('word').innerText = '_ '.repeat(secretWord.length);
+            document.getElementById('hangman').innerText = HANGMAN_PHOTOS[1];
+            document.getElementById('message').innerText = ''; // איפוס ההודעה
+            enableInput();
         }
-        updateDisplay();
-    }
-    document.getElementById('letter').value = '';
-}
-
-
-
-function disableInput() {
-    document.getElementById('letter').disabled = true;
-    document.querySelector('button[onclick="guessLetter()"]').disabled = true;
-}
-
-function enableInput() {
-    document.getElementById('letter').disabled = false;
-    document.querySelector('button[onclick="guessLetter()"]').disabled = false;
-}
-
-
-
+        
+        function guessLetter() {
+            const letter = document.getElementById('letter').value.toLowerCase();
+            if (letter && !oldLettersGuessed.includes(letter)) {
+                oldLettersGuessed.push(letter);
+                if (!secretWord.includes(letter)) {
+                    num_of_tries++;
+                }
+                updateDisplay();
+            }
+            document.getElementById('letter').value = '';
+        }
+        
+        
+        
+        function disableInput() {
+            document.getElementById('letter').disabled = true;
+            document.querySelector('button[onclick="guessLetter()"]').disabled = true;
+        }
+        
+        function enableInput() {
+            document.getElementById('letter').disabled = false;
+            document.querySelector('button[onclick="guessLetter()"]').disabled = false;
+        }
+        
+        
+        
 function updateDisplay() {
     let displayedWord = '';
     for (let char of secretWord) {
@@ -97,7 +97,6 @@ function updateDisplay() {
         disableInput();
     }
 }
-
 
 
 
